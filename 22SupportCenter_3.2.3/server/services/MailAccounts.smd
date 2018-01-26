@@ -1,0 +1,44 @@
+{"SMDVersion":".1",
+ "objectName":"MailAccounts",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=MailAccounts",
+ "methods":
+ 	[
+		{"name":"getMailAccountsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteMailAccount",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"insertMailAccount",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateMailAccount",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"setAsDefaultMailAccount",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getMailAccount",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

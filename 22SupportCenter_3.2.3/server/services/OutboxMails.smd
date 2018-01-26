@@ -1,0 +1,26 @@
+{"SMDVersion":".1",
+ "objectName":"OutboxMails",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=OutboxMails",
+ "methods":
+ 	[
+		{"name":"getMailsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteMail",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"retryMail",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

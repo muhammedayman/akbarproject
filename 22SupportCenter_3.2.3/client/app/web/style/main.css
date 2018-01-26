@@ -1,0 +1,549 @@
+@CHARSET "UTF-8";
+
+.leftMenu {
+	padding-left: 4px;
+}
+
+.leftMenu span {
+	font-weight: bold;	
+}
+
+.contentWrapper {
+	/*width: 830px;*/
+}
+
+.contentWrapper .mainContent {
+	min-height: 400px;
+	padding: 12px;
+}
+
+.topMenu, .topMenu:hover {
+	color: #0000CC;
+	font-weight: normal;
+	font-size: 12px;
+	background-color: transparent;
+}
+
+.bottomMenu, .bottomMenu:hover {
+	color: #0000CC;
+	font-weight: normal;
+	font-size: 10px;
+	background-color: transparent;
+}
+
+img.corner {
+   border: none;
+   display: block !important;
+}
+
+.toolbar {
+	margin-bottom: 8px;	
+}
+
+.filter {
+	margin-bottom: 8px;	
+}
+
+.buttonbar {
+	margin: 8px;
+}
+
+a.backLink, a.backLink:hover {
+	color: #0000CC;
+	font-weight: bold;
+	font-size: 12px;
+	background-color: transparent;
+}
+
+a.backLinkGreen, a.backLinkGreen:hover {
+	color: #2E8C2E;
+	font-weight: bold;
+	font-size: 12px;
+	background-color: transparent;
+}
+
+a.smallBlue, a.smallBlue:hover {
+	color: #0000CC;
+	font-weight: normal;
+	font-size: 9px;
+	background-color: transparent;	
+	text-decoration: underline;
+}
+
+a.smallBlue:hover {
+	text-decoration: none;
+}
+
+a.blue, a.blue:hover {
+	color: #0000CC;
+	font-weight: normal;
+	background-color: transparent;
+	text-decoration: underline;	
+}
+
+a.blue:hover {
+	text-decoration: none;	
+}
+
+div.backLink {
+	padding-left: 12px;
+	padding-top: 0px;
+}
+
+.logUsers {
+	color: green;
+	font-size: 8px;	
+}
+
+/* EMAIL WIDGET */
+.quEmail {
+	width: 100%;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.quEmail .header {
+	padding-left: 8px;
+	min-height: 19px;
+	_height: 19px;
+}
+
+.quEmail .header .from {
+	color: #2E8C2E;
+	padding-right: 8px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.quEmail .header .rightPane {
+	margin-left: 24px;
+	display: inline;
+}
+
+.quEmail .header .rightPane .received {
+	
+}
+
+.quEmail .header .rightPane .answered {
+	width: 16px;
+	height: 16px;
+	vertical-align: top;
+}
+
+.quEmail .header .rightPane .notdelivered {
+	width: 16px;
+	height: 16px;
+	vertical-align: top;
+	text-decoration: blink;
+	color: red;
+}
+
+.quEmail .header .subject {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.quEmail .toolbar {
+	padding: 4px;
+	text-align: left;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #EEEEEE;
+}
+.quEmail .toolbar .showheaders {
+	position: absolute;
+	right: 35px;
+	display: inline;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.button {
+	cursor: pointer;
+	margin-left: 4px;
+	margin-right: 4px;	
+}
+
+.quEmail .footer {
+	border-top: 1px solid #EEEEEE;
+	padding-left: 8px;
+	min-height: 18px;
+	_height: 18px;
+}
+
+.quEmail .footer a {
+	color: #999999;
+	font-weight: normal;
+	font-size: 12px;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.quEmail .footer a:hover {
+	color: #999999;
+	font-weight: normal;
+	font-size: 12px;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.quEmail .footer .attachmentImage {
+	width: 15px;
+	height: 15px;
+	vertical-align: bottom;
+	margin-right: 4px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.quEmail .footer .attachments {
+	color: #999999;
+	cursor: pointer;
+}
+
+.quEmail .body {
+	min-height: 26px;
+	padding: 6px;
+	overflow: auto;
+	background-color: transparent;
+	clear: both;
+	font-family: monospace;
+}
+
+.quEmail .details {
+	padding-left: 8px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.quEmail .headers {
+	padding-left: 8px;
+	background-color: #FEFEFE;
+}
+
+.quEmail .headers td {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.quEmail .attDetails {
+	padding-left: 8px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #EEEEEE;
+}
+
+.quEmail .attDetails a {
+	color: #0000CC;
+	font-weight: normal;
+	font-size: 12px;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.quEmail .attDetails a:hover {
+	color: #0000CC;
+	font-weight: normal;
+	font-size: 12px;
+	background-color: transparent;	
+	text-decoration: underline;
+}
+
+.quEmail .emailAddress {
+	color: #999999;
+}
+
+.quEmail .detailLabel {
+	color: #333333;
+	text-align: right;
+}
+
+.showhistory {
+/*	position: absolute;
+	right: 35px;*/
+	display: inline;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+a.showhistory, a.showhistory:hover {
+	position: absolute;
+	color: #000000;
+	font-weight: normal;
+	background-color: transparent;
+	text-decoration: underline;	
+}
+
+.historyentry {
+	background: transparent url('../../../lib/icons/crystalsvg/16/smallclock.png') no-repeat center left;
+	margin: 4px;
+	margin-left: 8px;
+	padding-left: 14px;
+}
+
+.historyentry .created {
+	color: #000088;
+	font-weight: normal;
+	font-size: 10px;
+	padding-right: 10px;
+}
+
+.historyentry .createdby {
+	color: #555555;
+	font-weight: bold;
+	font-size: 10px;
+	padding-right: 10px;
+}
+
+.historyentry .changes {
+	font-weight: normal;
+	font-size: 10px;
+}
+
+td.replyLabel {
+	text-align: right;
+	font-weight: bold;
+	width: 70px;
+	vertical-align: top;
+}
+
+.quAttachment {
+	margin-bottom: 5px;
+}
+
+.quAttachment .cmdAttachFile {
+	color:  #0000CC;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.quAttachment .cmdRemove {
+	color:  #0000CC;
+	text-decoration: underline;
+	cursor: pointer;
+	margin-left: 8px;
+}
+
+.quAttachment a.fileInfo, .quAttachment a.fileInfo:hover {
+	font-style: normal;
+	color: black;
+	margin-bottom: 5px;
+	background-color: transparent;
+	font-weight: normal;
+}
+
+.quAttachment a.fileInfo:hover {
+	text-decoration: underline;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++
+	USER DETAIL TABFOLDER
+++++++++++++++++++++++++++++++++++++++++++*/
+.quUserDetailTF {
+
+}
+
+.quUserDetailTF .buttons {
+	height: 26px;
+	_height: 20px;
+}
+
+.quUserDetailTF .container {
+	background-color: white;
+	overflow: auto;
+	padding: 8px;
+}
+
+.quUserDetailTF .button {
+	float: left;
+	padding-top: 6px;
+	_padding-top: 3px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 0px;
+	margin-right: 8px;
+	cursor: pointer;
+	height: 20px;
+	_height: 22px;
+	font-weight: bold;
+}
+
+.quUserDetailTF .title {
+	text-decoration: underline;
+}
+
+.quUserDetailTF .icon {
+	vertical-align: middle;
+	margin-right: 4px;
+	border: none;
+}
+
+.quUserDetailTF .active {
+	background-color: white;
+}
+
+.quUserDetailTF .inactive {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.formLabel {
+	text-align: right;
+	color: #666666;
+}
+
+.mainMenu {
+	width: 150px;
+	text-align: left;
+	overflow: hidden;
+	float: left;
+	margin-top: 20px;	
+}
+
+* html .mainMenu {  
+	width: 150px;  
+	text-align: left;  
+	position: absolute;  
+	top: 20px;  
+	left: 0px; 
+	_left: -150px;  
+	float: none;  
+	margin-top: 0px; 
+} 
+
+.mainContainer {
+	margin-left:150px;
+}
+
+a.blank, a.blank:hover {
+    background-color: transparent;
+    color: #0000CC;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.blank:hover {
+    text-decoration: underline;
+}
+
+.configurationKey {
+	width: 200px;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.configurationValue {
+	width: 250px;
+	vertical-align: top;
+}
+
+.configurationHelp {
+    color: #555555;
+    font-weight: normal;
+	font-size: 10px;
+}
+
+.configurationTable {
+	border-collapse: collapse;
+}
+.configurationTable td {
+	border-bottom: 1px solid #CCCCCC;
+	padding: 6px;
+}
+
+a.mainFilter, a.mainFilter:hover {
+	white-space: pre;
+	font-weight: normal;
+	color: #364157;
+	background-color: transparent;
+	text-decoration: none;
+	line-height: 150%;
+}
+
+a.mainFilter:hover {
+	text-decoration: underline;
+}
+
+div.mainFilter {
+	margin-left:7px;
+	width: 132px;
+	_width: 140px;
+	_width: 139px;
+	overflow:hidden;
+	background: #e0ecff url('../images/corners/mainFilter_4x4_bl.png') no-repeat bottom left;
+	padding: 4px;
+	padding-left: 6px;
+	padding-top: 0px;
+}
+
+div.mainFilterUnselected {
+	background: transparent;
+}
+
+div.mainFilter div {
+	width: 129px;
+	_width: 137px;
+	overflow: hidden;
+}
+
+a.openUserInWindow, a.openUserInWindow:hover {
+	font-weight: normal;
+	color: black;
+	background-color: transparent;	
+	text-decoration: underline;
+}
+
+a.openUserInWindow:hover {
+	text-decoration: none;
+}
+.knowledgebase .label {
+	font-weight: bold;
+	color: #ffc799;	
+}
+
+.knowledgebase .text {
+	color: #364157;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Suggestion block in submit new ticket form - login page
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.suggestion_block {
+	display: none; 
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	border: 1px #C3D9FF solid;
+	padding: 5px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.suggestion_title {
+	background: transparent url('../../../lib/icons/crystalsvg/16/help.png') no-repeat;
+}
+
+.suggestion_title_text {
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.suggestion_item_title {
+	font-weight: bold;
+}
+
+.suggestion_container {
+	margin-top: 3px;
+}
+
+.suggestion_container a {
+	color: navy;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.suggestion_row {
+	padding-left: 2px;
+}
+
+.suggestion_container a:hover {
+	background-color: transparent;
+}

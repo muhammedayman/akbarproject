@@ -1,0 +1,56 @@
+{"SMDVersion":".1",
+ "objectName":"Tickets",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Tickets",
+ "methods":
+ 	[
+		{"name":"getTicketsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteTicket",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateTicket",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"replyMail",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getMailsData",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"newAnonymTicket",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"moveMailToNewTicket",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getCustomFieldValues",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

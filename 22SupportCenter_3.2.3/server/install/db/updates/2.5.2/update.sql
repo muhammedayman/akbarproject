@@ -1,0 +1,5 @@
+INSERT IGNORE INTO mail_templates VALUES('RegistrationMail', 'all', 'y', 'n', 'Welcome in SupportCenter', '<p>\r\nDear ${name},<br />\r\nyou have been successfully registered in our trouble ticket system.<br />\r\nYour account information:<br />\r\nUsername: ${to}<br />\r\nPassword: ${password}<br />\r\n<br />\r\nAfter login you can check status of your tickets or report new tickets here: ${appUrl}<br />\r\n<br />\r\nRegards,<br />\r\n<br />\r\nQuality Unit Support Team<br />\r\n</p>', '');
+INSERT IGNORE INTO mail_templates VALUES('RequestNewPasswordMail', 'all', 'y', 'n', 'You requested new Password from our SupportCenter', '<p>\r\nDear ${name},<br/>\r\nyou have requested new password.<br />\r\nYour new account information:<br />\r\nUsername: ${to}<br />\r\nPassword: ${password}<br />\r\n<br />\r\nAfter login you can check status of your tickets or report new tickets here: ${appUrl}<br />\r\n<br />\r\nRegards,<br />\r\n<br />\r\nQuality Unit Support Team<br />\r\n</p>', '');
+INSERT IGNORE INTO mail_templates VALUES('CoverMail', 'all', 'y', 'y', '${subject}', '${body}', '${body}');
+
+update settings set setting_value = '2.5.2' WHERE setting_key='dbLevel';

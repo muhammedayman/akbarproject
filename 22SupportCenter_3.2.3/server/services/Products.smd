@@ -1,0 +1,38 @@
+{"SMDVersion":".1",
+ "objectName":"Products",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Products",
+ "methods":
+ 	[
+		{"name":"getProductsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteProduct",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"insertProduct",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateProduct",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getProduct",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

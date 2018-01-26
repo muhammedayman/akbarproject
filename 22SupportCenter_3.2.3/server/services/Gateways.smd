@@ -1,0 +1,38 @@
+{"SMDVersion":".1",
+ "objectName":"Gateways",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Gateways",
+ "methods":
+ 	[
+		{"name":"updateGateway",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"insertGateway",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"getGatewaysList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"deleteGateway",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"getGateway",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

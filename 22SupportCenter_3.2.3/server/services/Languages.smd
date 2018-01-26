@@ -1,0 +1,14 @@
+{"SMDVersion":".1",
+ "objectName":"Languages",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Languages",
+ "methods":
+ 	[
+		{"name":"getAvailableLanguages",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+	]
+}

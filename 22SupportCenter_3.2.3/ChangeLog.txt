@@ -1,0 +1,890 @@
+29.3.2011 - Release 3.2.3
+
+29.3.2011 - BugFix: PHP Warning: iconv_substr() expects parameter 1 to be string, array given in server/include/Pear/Mail/RFC822.php on line 927
+29.12.2010 - BugFix: Supress notices about Datetime function used before setting correct time zone  
+
+21.10.2010 - Release 3.2.2
+
+21.10.2010 - BugFix: Group related custom fields was not possible to save
+
+13.07.2010 - Release 3.2.1
+
+13.07.2010 - BugFix: custom field of type html computed value caused, that my profile couldn't be saved
+13.07.2010 - Feature: Order statuses by name and not by status code
+
+25.05.2010 - Release 3.2.0
+
+25.05.2010 - Feature: Extend number of displayed filters under menu Tickets to 8 (old version had just 5 filters displayed)
+
+07.04.2010 - Release 3.1.9
+
+07.04.2010 - BugFix: Custom field was not saved in case computed field was in list of fields
+09.03.2010 - BugFix: Download of attachments failed in IE8
+24.02.2010 - BugFix: attachment was not named correctly if mail sent from .Net library
+
+21.12.2009 - Release 3.1.8
+
+21.12.2009 - BugFix: In tickets list click on icon "Open ticket in new window" opened also in original window ticket detail
+10.12.2009 - Feature: Control with config parameter maxFromMailsCount number of allowed "From" addresses (spam protection)
+
+16.11.2009 - Release 3.1.7
+
+16.11.2009 - BugFix: file contents were not deleted from database even if file was deleted.
+
+11.11.2009 Release 3.1.6
+
+11.11.2009 Feature: Implementation of reCAPTCHA to knowledgebase submit form
+
+2.10.2009 - Release 3.1.5
+
+2.10.2009 - BugFix: In case To field in mail was empty and any queue had no email defined, ticket was assigned to first queue without email defined
+2.9.2009 - BugFix: Unique message id header was not generated correctly and notifications were marked as duplicates of other message.
+
+10.8.2009 - Release 3.1.4
+
+10.8.2009 - BugFix: If ticket was assigned to any queue already and new mail was received queue condition in parsing rule was not working
+10.8.2009 - BugFix: Parsing rule changed ticket priority to undefined if was parsing rule applied, but no priority was selected
+10.8.2009 - BugFix: In some installations were missing column in parsing rules table
+13.7.2009 - Feature: Added Kazakh translation
+
+24.6.2009 - Release 3.1.3
+
+24.6.2009 - BugFix: In ticket detail is not visible user email and ticket subject
+
+23.6.2009 - Release 3.1.2
+
+23.6.2009 - BugFix: Error: Insert failed: Incorrect integer value: '' for column 'change_to_prio' at row 1
+22.6.2009 - BugFix: XSS vulnerability fix in ticket detail
+
+11.6.2009 - Release 3.1.1
+
+11.6.2009 - BugFix: XSS vulnerability fix in tickets table
+18.5.2009 - BugFix: Generating of word index in knowledgebase failed on wrong insert syntax.
+
+13.5.2009 - Release 3.1.0
+
+13.5.2000 - BugFix: Mail account credentials were accessible by simple user. 
+
+5.5.2009 - Release 3.0.9
+
+5.5.2009 - BugFix: Knowledge base suggestions were not refreshed in IE6 and IE7 in submit ticket form.
+
+23.4.2009 - Release 3.0.8
+
+23.4.2009 - BugFix: After logout was not loaded login screen design
+22.4.2009 - BugFix: Switched on compatibility mode with IE7 in IE8 browsers
+
+27.3.2009 - Release 3.0.7
+
+26.3.2009 - Feature: In parsing rule added in condition check if user was already registered in system
+25.3.2009 - Feature: Add Japanese language translation
+11.3.2009 - BugFix: Agent was not able to update Knowledgebase item if User access was selected
+
+9.3.2009 - Release 3.0.6
+
+9.3.2009 - BugFix: instanceof was not supported before PHP5.0 - all installations on PHP4 failed after upgrade
+6.3.2009 - BugFix: File was not deleted from temporary folder in case parsing rule deleted mail before next processing. 
+
+4.3.2009 - Release 3.0.5
+
+4.3.2009 - Feature: Inside signature will be supported variables: ${subject_ticket_id}, ${ticket_subject}, ${ticket_url}, ${ticket_link}
+23.2.2009 - Feature: Updated Bulgarian language
+23.2.2009 - BugFix: Stop words didn't worked in case of special characters were used.
+
+23.1.2009 - Release 3.0.4
+
+22.1.2009 - Feature: Changed page title generation in Knowledge base 
+21.1.2009 - Feature: Blind Carbon Copy for all mails sent out from supportCenter
+21.1.2009 - BugFix: preg_replace(): Unknown modifier '1' in file Tickets.class.php on line 539
+17.1.2009 - Feature: Added Traditional Chinese translation
+15.1.2009 - Feature: Added Polish translation
+
+5.1.2009 - Release 3.0.3
+
+5.1.2009 - Feature: Updated Spanish language
+5.1.2009 - BugFix: Parsing rule - cc field match condition matched also in case value was empty
+1.12.2008 - BugFix: Parsing rule matched text value also in case value was empty
+
+5.11.2008 - Release 3.0.2
+
+4.11.2008 - BugFix: Saving new mail account didn't saved from name format
+4.11.2008 - BugFix: Agent can see just agents from his Queues - functionality displayed also admins - now it should be fixed
+4.11.2008 - BugFix: Fixed bug in submit_form.php example
+3.11.2008 - Feature: Custom fields in group - not visible in ticket !
+22.10.2008 - Feature: Performance optimization in reports
+17.10.2008 - BugFix: Design of login screen fixed for IE8
+
+14.10.2008 - Release 2.9.9
+
+14.10.2008 - BugFix: Sometimes was added attachment to mail with wrong filename
+14.10.2008 - Feature: From Working time report is possible view detail of ticket in new window
+14.10.2008 - Feature: Changed default sort order of Working report from ascending to descending by time of report
+7.10.2008 - Feature: For systems, where exists file /proc/loadavg check before starting jobs.php load on server
+
+24.9.2008 Release 2.9.8
+
+16.9.2008 Feature: Removed check of browser version. Chrome and Safari in latest versions should start to work
+
+16.9.2008 Release 2.9.7
+
+16.9.2008 - Feature: In knowledgebase part implemented function Register new user and Request new password
+11.9.2008 - Feature: Changed size of knowledgebase item body from TEXT to LONGTEXT
+
+5.9.2008 - Release 2.9.6
+
+4.9.2008 - BugFix: ListBox popup was shifted some pixel up and covered also listbox body
+21.8.2008 - BugFix: If Pop3 server is not filled, don't try to connect - report directly error
+21.8.2008 - BugFix: With some types of POP3 servers jobs.php freeze during extraction of mails 
+
+20.8.2008 - Release 2.9.5
+
+20.8.2008 - BugFix: Notification was not sent to agent if agent assigned ticket to another agent 
+14.8.2008 - Feature: Added option to define custom auth methods for SMTP authentication
+13.8.2008 - Feature: Downloads section available also for administrator and agent
+8.8.2008 - BugFix: On IIS6 failed upload of files with error Length Required 
+
+6.8.2008 - Release 2.9.4
+
+6.8.2008 - BugFix: User was not able to view attachments. It always failed with error: Permissions denied
+6.8.2008 - BugFix: Simple user will not be able to change his username (email) - security leak
+6.8.2008 - BugFix: User saw update fields in tickets table if checked checkbox next to ticket row
+14.7.2008 - Feature: Changed logo of SupportCenter
+
+3.7.2008 - Release: 2.9.3
+
+3.7.2008 - Feature: Show performance report after user clicks apply button and not on load of form
+3.7.2008 - BugFix: Escalation rule detail displayed error: Error: rs.get("group_cond") is null
+3.7.2008 - BugFix: Escalation was not saved if priority action was not defined on Mysql in strict mode
+18.6.2008 - Feature: User can disable notifications from Download Manager module in his profile
+12.6.2008 - Feature: In Escalation rule added time value "More than one minute" and "More than 5 minutes"
+
+11.6.2008 - Release 2.9.2
+
+11.6.2008 - Feature: Escallation rule can filter tickets by customer email and group
+5.6.2008 - Feature: implemented example of integration of DownloadManagher with SWREG payment processor
+5.6.2008 - BugFix: Layout of custom fields in new ticket form
+4.6.2008 - BugFix: New product was not possible to save. 
+
+30.5.2008 - Release 2.9.1
+
+29.5.2008 - BugFix: User access knowledgebase items displayed on place of description and title value "undefined"
+29.5.2008 - Feature: Send order notification mail to customer, if product was assigned to customer 
+
+28.5.2008 - Release 2.9.0
+
+28.5.2008 - Feature: Added new user profile pption to hide knowledgebase suggestions in ticket reply form
+28.5.2008 - BugFix: Sort custom fields correctly in submit new ticket form
+28.5.2008 - BugFix: New ticket overwritten existing custom field values
+27.5.2008 - Feature: Download Manager module
+22.5.2008 - Feature: Fixed RSS feed of global filters
+21.5.2008 - Feature: Moved Knowledgebase definition to menu Settings
+21.5.2008 - Feature: All logged in users can browser Knowledgebase in SupportCenter
+21.5.2008 - Feature: Added new access level to KB items - User Access - logged in users can see such entries
+16.5.2008 - BugFix: Javascript error was generated in Internet Explorer during typing of message in ticket detail (In Firefox it worked fine)
+
+13.5.2008 - Release 2.8.4
+
+13.5.2008 - Feature: By default switch off mail address quality validation on windows systems (just during new installation). 
+7.5.2008 - BugFix: Text "Other similar entries" in knowledgebase template was not loaded from translation file
+7.5.2008 - BugFix: Correct handling of To address when replying of ticket created by agent
+2.5.2008 - BugFix: Filter names with special characters didn't generated valid RSS Feed file
+
+28.4.2008 - Release 2.8.3
+
+2.5.2008 - Feature: TLS authentication method added to SMTP options
+
+28.4.2008 - Release 2.8.2
+
+28.4.2008 - Feature: IF creating new ticket as admin or agent, save from address of customer instead of support email
+23.4.2008 - Feature: Added new language translation: Svenska
+21.4.2008 - Feature: New option to hide groups in application
+21.4.2008 - BugFix: Some characters were not transmitted correctly to server from browser (e.g. + was replaced by space)
+
+18.4.2008 - Release 2.8.1
+
+18.4.2008 - Feature: Because of incompatibility between different types of servers, POST data handled with $_POST
+
+16.4.2008 - Release 2.8.0
+
+16.4.2008 - Feature: If content type not defined, use multipart/form-data
+11.4.2008 - Feature: Reset outgoing mail status will work also on mails in status Sending 
+11.4.2008 - Feature: Set correctly Return-Path header
+
+10.4.2008 - Release 2.7.3
+
+10.4.2008 - BugFix: Solved problems with download of some types of files
+10.4.2008 - BugFix: Parsing rule didn't matched To address if To address contained more email addresses 
+9.4.2008 - Feature: Show custom fields in submit new ticket form for logged in users
+9.4.2008 - Feature: Show Knowledgebase entries also in Reply form and New ticket form for logged in users
+8.4.2008 - BugFix: Parsing Rule passed condinion if To field field was empty and condition value was set
+7.4.2008 - BugFix: Save ticket function didn't saved body of new ticket in version 2.7.2
+
+4.4.2008 - Release 2.7.2
+
+4.4.2008 - Feature: When replying or creating new ticket, agent and admin has option just to save answer to ticket without sending it as email
+4.4.2008 - BugFix: User was not able to resolve ticket if was activated option, that all users in group can see all group tickets
+4.4.2008 - BugFix: Agent was not able to save user group assignment of user
+4.4.2008 - Feature: Log, which rule was executed on which incomming mail
+4.4.2008 - BugFix: CC condition value in parsing rule displayed string null if empty
+3.4.2008 - Feature: Compute path also for embeded elements in body of mails in mail detail view
+2.4.2008 - BugFix: Fixed javascript error in user detail (visible in IE)
+
+31.3.2008 - Release 2.7.1
+
+31.3.2008 - BugFix: Failed to save parsing rule if no group was selected
+
+31.3.2008 - Release 2.7.0
+
+31.3.2008 - Feature: Automatically choose best request content type setting depending on server type
+31.3.2008 - Feature: In Parsing rule added support of user group filter
+31.3.2008 - Feature: In Parsing rule added support of cc value filter
+31.3.2008 - BugFix: If selected filter mail account in tickets, tickets count was not calculated correctly
+25.3.2008 - BugFix: If was activated access to tickets for all users of group, user without group didn't saw his tickets
+
+19.3.2008 - Release 2.6.9
+
+18.3.2008 - BugFix: Escallation rule - priority setting was overwritten
+17.3.2008 - BugFix: Error: this.getModel().getWroteByUser() has no properties
+17.3.2008 - Feature: Execution Controller - block execution of more jobs.php in same time
+
+14.3.2008 - Release: 2.6.8
+
+14.3.2008 - Feature: Queue signature
+
+5.3.2008 - Release: 2.6.7
+
+4.3.2008 - BugFix: Some users were not able to login and login failed with error "_99b has no properties"
+3.3.2008 - Feature: Global filters defined by administrator
+
+19.2.2008 - Release 2.6.6
+
+18.2.2008 - BugFix: In some cases failed to display users list form
+18.2.2008 - BugFix: Installation script failed when with error: Field due doesn't have default value
+18.2.3008 - Feature: Maximum number of escalated tickets increased from 500 to 2000
+18.2.2008 - BugFix: Fixed sql error in escalation rules
+17.2.2008 - BugFix: "Failed to compute Ticket Report" error fixed
+
+31.1.2008 - Release 2.6.5
+
+31.1.2008 - BugFix: Fixed problem with decoding of some messages: Failed to decode message XXX with error the body - specified an invalid quoted-printable encoded character
+31.1.2008 - BugFix: Fixed German translation file
+30.1.2008 - BugFix: Some knowledgebase entries remained not indexed for long time
+30.1.2008 - Feature: Don't make optimization of database so often (increased timeout up to 5 days)
+30.1.2008 - Feature: Keybord shortcuts in WYSIWYG editor (CTRL+B, CTRL+I, CTRL+U, CTRL+Z, CTRL+Y)
+29.1.2008 - Feature: Reply-To header value handling
+
+25.1.2008 - Release 2.6.4
+
+25.1.2008 - BugFix: New user registration form freezed right after opening this dialog
+23.1.2008 - Feature: Group name and groupid added to billing report export and also to billing report table
+23.1.2008 - Feature: Group filter added to billing report
+
+18.1.2008 - Release 2.6.3
+
+18.1.2008 - Feature: Display images in body of mails as images and not just like attachments 
+17.1.2008 - Feature: New option Prevent mail loops added to Configuration
+
+16.1.2008 - Release 2.6.2
+
+16.1.2008 - BugFix: Status list in ticket update section was not updated when something changed in list of statuses.
+14.1.2008 - BugFix: Failed to update user profile with SQL error
+
+12.1.2008 - Release 2.6.1
+
+12.1.2008 - BugFix: In settings -> Configuration menu was displayed javascript error: inBool not defined
+
+10.1.2008 - Release: 2.6.0
+
+10.1.2008 - Feature: User can see tickets of other users in same group 
+09.1.2008 - Feature: User groups and notifications depending on group value
+07.1.2008 - BugFix: Tickets filter doesn't filtered correct user related fields
+21.12.2007 - Feature: RSS Feed for each filter
+
+19.12.2007 - Release 2.5.6
+
+19.12.2007 - Feature: Export data from grid to csv 
+
+18.12.2007 - Release 2.5.5
+
+18.12.2007 - BugFix: Don't overwrite manually entered billing time
+
+12.12.2007 - Release 2.5.4
+
+12.12.2007 - Feature: Enabled option of single sign on (special customer request)
+12.12.2007 - Feature: Process JSON requests faster with native json function build into php 5.2.0 or higher
+
+11.12.2007 - Release 2.5.3
+
+11.12.2007 - BugFix: Installation wizard failed on Mysql 5.x.x
+
+10.12.2007 - Release 2.5.2
+
+10.12.2007 - BugFix: More detailed time display format in reports
+10.12.2007 - BugFix: Undefined order of Queues in submit forms
+10.12.2007 - BugFix: DB Error was generated if config was not defined
+7.12.2007 - BugFix: Failed to open Custom Mail Template detail in IE7
+4.12.2007 - BugFix: No id provided error message displayed in submit ticket form also in case ticket was successfully submitted
+
+3.12.2007 - Release 2.5.1
+
+3.12.2007 - Feature: In Escalation rules added option to fileter also 15, 30 and 45 minutes time ranges
+3.12.2007 - Feature: In Escalation rule added option to filter tickets without assigned agent
+3.12.2007 - Feature: Mail templates per Queue
+
+29.11.2007 - Release 2.5.0
+
+29.11.2007 - Feature: Billing report
+28.11.2007 - Feature: Reporting billed time, work time and reply time to ticket
+28.11.2007 - Feature: In notification can admin define custom FROM address of notification mail (independent on setting of mail account)
+
+26.11.2007 - Release 2.4.4
+
+26.11.2007 - Feature: New config option to define request content type (requestContentType)
+26.11.2007 - Feature: "Session not active" message moved from log level "error" to level "debug"
+26.11.2007 - BugFix: if received mail with empty body, report error, but process mail
+26.11.2007 - BugFix: Branding free version didn't displayed footer of application
+23.11.2007 - Feature: Added new language (Danish)
+23.11.2007 - Feature: In installation wizard added link to help how to setup cron job or scheduled task
+23.11.2007 - BugFix: Missing file in distribution (client/lib/3rd/jscalendar/calendar-blue.css)
+
+22.11.2007 - Release 2.4.3
+
+22.11.2007 - BugFix: Installation wizard failed with error: Failed due_basetime doesn`t have a defaulf value
+
+22.11.2007 - Release 2.4.2
+
+22.11.2007 - BugFix: On some servers was not allowed to use content type application/x-www-form-urlencoded
+
+21.11.2007 - Release: 2.4.1
+
+21.11.2007 - Feature: Signature customizable per Queue
+
+16.11.2007 - Release 2.3.4
+
+16.11.2007 - BugFix: Request content type changed to text/html (application/json-rpc was not supported by all servers)
+15.11.2007 - BugFix: PDF printing of tickets by agent fixed
+
+15.11.2007 - Release 2.3.3
+
+15.11.2007 - BugFix: LDAP authentification logged in user, but in IE he was not able to do anything
+15.11.2007 - Feature: Option to have branding free version (without link to QualityUnit in footer)
+14.11.2007 - Feature: After ticket was submitted, display alert box to user
+14.11.2007 - Feature: Click on link in mail body will open url in new window
+14.11.2007 - BugFix: Make sure, that mail_id will be unique also on Exchange servers
+14.11.2007 - BugFix: Fixed behaviour of Autocomplete field in IE
+13.11.2007 - BugFix: Admin was not able to delete mail gateway of other agent
+13.11.2007 - BugFix: Added missing google gears library into distribution file
+12.11.2007 - BugFix: IE7 failed to display Parsing Rules detail
+
+12.11.2007 - Release 2.3.2
+
+12.11.2007 - BugFix: Knowledgebase was not correctly generated - all translations were missing
+
+9.11.2007 - Release 2.3.1
+
+9.11.2007 - Feature: Notification can call external url with parameters
+9.11.2007 - Feature: Recipient of notification can be defined also in custom field value
+9.11.2207 - Feature: Parsing content of mail body and matching it to custom fields
+7.11.2007 - Feature: Custom fields values in notification mails
+7.11.2007 - Feature: Predefined variables in notification can be added into body by select box
+5.11.2007 - Feature: Added Turkish translation
+
+5.11.2007 - Release 2.2.2
+
+30.10.2007 - BugFix: Adjusted width of all Comboboxes in SupportCenter
+30.10.2007 - BugFix: In custom field detail definition was wrong label of Options field
+29.10.2007 - Feature: Compute Due time from ticket creation date or from last ticket update
+
+26.10.2007 - Release: 2.2.1
+
+24.10.2007 - BugFix: Lost Custom field values after update of any ticket related value
+22.10.2007 - Feature: Added config switch checkUniqueMailJustInAccount. Required for some Exchange server installations.
+19.10.2007 - Feature: Default language was not used in knowledgebase in case it was not English
+18.10.2007 - Feature: Google Gears implemented into SupportCenter - cached are images, css and dojo library files
+
+17.10.2007 - Release 2.2.0
+
+17.10.2007 - BugFix: User's custom field values were duplicated if were saved in different tickets
+16.10.2007 - BugFix: Answer to notification mail created new ticket and not assignet it to correct ticket
+16.10.2007 - Feature: Hide Language selection in login window if there is just one language pack available.
+16.10.2007 - BugFix: In log were not displayed correctly related users after click on log entry
+16.10.2007 - Feature: Log every sent mail from application (also system mails)
+16.10.2007 - Feature: In custom status detail can be defined, if due time is computed for tickets with this status or not
+16.10.2007 - Feature: Mail Gateways administration by administrator in Settings
+16.10.2007 - Feature: Added support of language translations in generated KB files (default language is used)
+16.10.2007 - Feature: Redeisgned Knowledgebase templates structure
+15.10.2007 - Feature: Finished LDAP authentification
+13.10.2007 - Feature: Updated library Pear_Net_Socket
+12.10.2007 - BugFix: Queue detail design in Italian translation was corrupted
+11.10.2007 - BugFix: PHP Warning: iconv() expects parameter 3 to be string, object given 
+11.10.2007 - Feature: Request timeout changed from 30 to 60 seconds 
+
+10.10.2007 - Release 2.1.3
+
+9.10.2007 - Feature: Added check if MySql is supported in php in installation wizard
+9.10.2007 - BugFix: In same cases conversion of html mail to text caused never ending loop and crashed server
+5.10.2007 - BugFix: In new ticket failed to open knowledgebase
+3.10.2007 - BugFix: In reply form was visible border in IE7
+3.10.2007 - BugFix: Fixed problem with missing translations
+
+1.10.2007 - Release 2.1.2
+
+28.9.2007 - BugFix: Ticket detail in user detail was not possible to open
+28.9.2007 - BugFix: CSS Design bug fixes
+
+27.9.2007 - Release 2.1.1
+
+27.9.2007 - BugFix: Error message in Outbox was cutted and not visible
+27.9.2007 - Feature: Added new custom field type: Computed HTML Text
+26.9.2007 - Feature: Added option to disable mail fetching optimization (needed for Exchange 2007 servers)
+25.9.2007 - Feature: Added all missing translations into English.lang.js file and removed all not used translations (Cleanup)
+25.9.2007 - Feature: LDAP authentification
+25.9.2007 - Feature: Priority field in Submit ticket form on login page (optional)
+24.9.2007 - Feature: Option to send password in plan format (allows other types of authentification)
+
+21.9.2007 - Release 2.1.0
+
+21.9.2007 - Feature: Basic SupportCenter authentification example - preparation for custom authentification methods
+21.9.2007 - Feature: All server sources will be distributed without any encoding
+21.9.2007 - BugFix: Logged in agent didn't saw images from knowledgebase.
+20.9.2007 - Feature: Added Icelandic and Czech translation
+19.9.2007 - BugFix: Quick Search is not applicable for simple user, just for power users
+19.9.2007 - BugFix: Send And Resolve button didn't work for simple user
+19.9.2007 - Feature: Predefined messages (Canned messages) integrated with Knowledgebase
+17.9.2007 - Feature: Quick Fulltext Search added to tickets toolbar
+14.9.2007 - Feature: Improved speed of escalation rules
+14.9.2007 - Feature: Option to disable notifications
+
+13.9.2007 - Release 2.0.7
+
+13.9.2007 - BugFix: Fixed problem in installation wizard.
+13.9.2007 - Feature: With ticket can be deleted also related users to ticket if there is no other related ticket to this user
+13.9.2007 - BugFix: If momre statuses were selected in escalation rule, system failed with error
+13.9.2007 - BugFix: Custom fields filter in tickets list failed with sql error
+13.9.2007 - BugFix: Knowledgebase Login dialog design fix
+
+12.9.2007 - Release 2.0.6
+
+12.9.2007 - Feature: Escalation rules
+
+07.9.2007 - Release 2.0.5
+
+07.9.2007 - Feature: Option to disable Mail Gateway module
+06.9.2007 - Feature: Access control of agents to Users
+05.9.2007 - Feature: Agent can see just agents from his queues
+05.9.2007 - BugFix: In Mozilla were not loaded language files and application was not translated
+05.9.2007 - BugFix: Saving priority in parsing rule was not possible
+04.9.2007 - Feature: Added Custom Fields filter in Performance Report
+04.9.2007 - Feature: Show db errors in table widget to user
+03.9.2007 - Feature: Removed slow ticket indexing and finding similar KB items resolved in different way
+22.8.2007 - Feature: Login dialog in knowledgebase files
+21.8.2007 - BugFix: Ticket detail was not opened if tid parameter was in url
+20.8.2007 - BugFix: Error: "open_basedir restriction in effect" when searching Knowledge Base
+
+17.8.2007 - Release 2.0.4
+
+17.8.2007 - BugFix: JustifyFull didn't worked in WYSIWYG Editor
+17.8.2007 - BugFix: WYSIWYG Editor - Toolbar actions doesn't work in Opera
+17.8.2007 - BugFix: If in submit ticket form were used special characters, no suggestions were found also in case they exist in knowledgebase
+17.8.2007 - BugFix: If are no similar entries in knowledgebase to item in detail, don't display block "Other similar entries"
+17.8.2007 - BugFix: If are no suggestions found for ticket in knowledgebase, hide block with suggestions
+
+17.8.2007 - Release 2.0.3
+
+16.8.2007 - BugFix: Knowledge base search returned duplicate entries
+16.8.2007 - Feature: Knowledge base suggestions can be added to notification and autoresponder mails as variables
+16.8.2007 - Feature: Extended functionality of WYSIWYG editor
+16.8.2007 - BugFix: Special characters in signature were corrupted
+
+16.8.2007 - Release 2.0.2
+
+16.8.2007 - BugFix: Error: Invalid argument. This problem was just in IE
+
+15.8.2007 - Release 2.0.1
+
+15.8.2007 - BugFix: Problem with not displayed signature also in case signature was saved in database
+14.8.2007 - Feature: Indexing process moved to background computing (Existing index will be droped in this release and new index will be computed on background)
+14.8.2007 - BugFix: Submitting of new ticket generated error: Failed to submit your request: Failed to upload attachments
+13.8.2007 - BugFix: Remember me cookies save also after browser is closed
+13.8.2007 - Feature: Admin can define default font in WYSIWYG editor
+13.8.2007 - BugFix: Sometimes was default language field in Settings -> Configuration not loaded correctly
+
+12.8.2007 - Release 2.0.0
+
+11.8.2007 - Feature: Changed order of mails in PDF export
+10.8.2007 - Feature: Remember me function in submit ticket form
+10.8.2007 - Feature: Knowledgebase suggestions in submit ticket forms
+09.8.2007 - Feature: Sorting of queues by name in Submit ticket form on main login page (default Queue is always first)
+09.8.2007 - BugFix: Within 2 minutes after user logged SupportCenter application was automatically refreshed
+09.8.2007 - Feature: Submit Ticket form on login page contains option to submit attachment
+09.8.2007 - Feature: HTML Submit form can contain unlimited number of attachments
+08.8.2007 - Feature: Count number of file downloads (e.g. attachments, files in Knowledgebase, etc)
+08.8.2007 - Feature: Hit enter to apply changes in tickets filter
+08.8.2007 - Feature: Drag & Drop moving of items in Knowledgebase
+07.8.2007 - BugFix: Count of tickets was wrong if fulltext search filter was used
+07.8.2007 - Feature: Move cursor with Tab key from To field to Body and not to font selection
+06.8.2007 - Feature: Disable by default during installation email quality check in case SupportCenter is installed on IIS (Reason: security problems with executing external commands)
+06.8.2007 - Feature: Choose correct localhost name when sending mail through SMTP server to avoid error: localhost is silly HELO
+06.8.2007 - Feature: Queue Id information added also to Queue detail form
+03.8.2007 - Feature: First version of Knowledgebase module
+02.8.2007 - BugFix: in IE6 was detail of mail not displayed in HTML mode correctly
+01.8.2007 - Feature: Added Catalan language translation
+01.8.2007 - BugFix: Fixed sending of duplicated notifications in case ticket was created by Submit ticket form
+01.8.2007 - BugFix: Fixed notifications security problem - agent can be notified just about ticket changes in his queues
+01.8.2007 - BugFix: Priorities filter in notification didn't worked correctly
+01.8.2007 - Feature: Parsing rules will have option to make case sensitive or insensitive comparision of values
+27.7.2007 - BugFix: Some attachment file names were loaded incorrectly from mail
+24.7.2007 - BugFix: <? replaced in php code with <?php otherwise was required in php.ini hort_open_tag = on
+
+24.7.2007 - Release 1.8.0
+
+24.7.2007 - Feature: Display queue_id in Queue's list
+23.7.2007 - Feature: Added link to user in header of ticket detail form
+23.7.2007 - BugFix: Custom fields - checkbox value was not visible in IE
+20.7.2007 - Feature: automatically show custom fields section in ticket detail if custom fields contains any value
+20.7.2007 - BugFix: After relogin were filters not displayed
+20.7.2007 - BugFix: Filter name should be unique just per user and not for all users
+20.7.2007 - BugFix: Notifications were not sent in case "Tickets owned by" field contained value "any"
+20.7.2007 - BugFix: Queue was not selected correctly when new ticket created logged in user in SupportCenter
+18.7.2007 - Feature: Select default mail account by default in new ticket if user has right to use it
+18.7.2007 - Feature: Agent can't change admin and other agents profile
+18.7.2007 - Feature: User's filter always opened - workflow optimalization
+18.7.2007 - Feature: Don't allow to save notification until is at least one ticket event selected
+18.7.2007 - Feature: Support of html mails directly inside ticket detail area and not just as attachment
+
+17.7.2007 - Release 1.7.2
+
+17.7.2007 - Feature: Custom fields added to tickets filter
+16.7.2007 - Feature: Attachment preview in mail detail
+16.7.2007 - Feature: Display icon next to each custom ticket (informs if is field user related or ticket related)
+16.7.2007 - Feature: Check To field before sending mail
+16.7.2007 - Feature: Added button Add Comment to ticket detail
+16.7.2007 - Feature: Click on outbox entry will open ticket detail
+16.7.2007 - Feature: Activate by default switch Agent can see own reports during installation
+15.7.2007 - BugFix: Sometimes cursor in textarea disapeared in firefox browser
+13.7.2007 - BugFix: Subject was empty in case special characters were used in new ticket to customer
+13.7.2007 - Feature: Database user password can be empty - installation wizard will continue also with empty value
+13.7.2007 - Feature: Compute in installation wizard path to temporary folder automatically if it is possible
+13.7.2007 - BugFix: Notification were not visible in My Profile -> My Notifications
+13.7.2007 - BugFix: If in from address name were used special characters, application generated error Validation failed for: ...
+12.7.2007 - Feature: Trim value submitted in Go To Ticket field
+12.7.2007 - BugFix: After installation had Low priority value 0 (should be 1) - this caused not working parsing rules and notifications
+
+28.6.2007 - Release 1.7.1
+
+28.6.2007 - Feature: Custom fields for Ticket and User
+28.6.2007 - BugFix: Text version of mail contained duplicated new lines
+28.6.2007 - BugFix: Typing in To field in Reply form generated javascript error in IE
+28.6.2007 - BugFix: IE failed during inicialization of Reply form and Reply buttons didn't worked
+27.6.2007 - BugFix: Don't forward answers to hidden comments in tickets to users
+27.6.2007 - BugFix: Error: Insert failed: Incorrect integer value: '' for column 'new_priority' at row 1
+27.6.2007 - Feature: Admin can define format of from address in outgoing mails for each mail account
+26.6.2007 - BugFix: In subjects with special characters were missing spaces - fixed by upgrade of PEAR library
+
+25.6.2007 - Release 1.7.0
+
+25.6.2007 - Feature: Redesigned Settings menu to fit to 1024x768 displays
+24.6.2007 - Feature: Added Russian translation
+22.6.2007 - Feature: Ticket change Notification Mail will not be sent to user, which changed the ticket
+22.6.2007 - Feature: All mail templates editable in Administrator's user interface
+
+22.6.2007 - Release 1.6.5
+
+22.6.2007 - BugFix: Priority cannot be empty error fixed
+21.6.2007 - Feature: In custom statuses can user select own images by easy selection
+21.6.2007 - BugFix: Unique Message Id was not case sensitive and on Exchange servers it didn't downloaded some mails
+20.6.2007 - BugFix: Status of ticket is not updated correctly if agent created ticket
+20.6.2007 - Feature: Notifications management
+20.6.2007 - Feature: Set mail account as default if there is no other defaul mail account
+20.6.2007 - BugFix: If user answered ticket in application, status of his ticket was set to empty value (not defined)
+20.6.2007 - Feature: Italian translation
+
+19.6.2007 - Release 1.6.4
+
+19.6.2007 - BugFix: Sending of mails should work also under Windows Vista (Fixed javascript bug)
+18.6.2007 - Feature: Queue selection in New Ticket form will be set by default to same queue as was answered last ticket
+17.6.2007 - Feature: Custom statuses
+13.6.2007 - Feature: Added Romanian translation
+12.6.2007 - BugFix: Some versions of PHP doesn't correctly match values with preg_match_all
+11.6.2007 - BugFix: fixed bug in mail parser - mails from hotmail were not correctly parsed.
+
+11.6.2007 - Release 1.6.3
+
+11.6.2007 - Feature: New configuration option - Auto assign ticket to agent on ticket reply
+11.6.2007 - Feature: New configuration option - Default priority
+11.6.2007 - Feature: Custom priorities
+8.6.2007 - Feature: New configuration option - Who can see online agents list (Agents+Admins, Admins or nobody)
+
+8.6.2007 - Release 1.6.2
+
+8.6.2007 - BugFix: Corrected detection of iconv extension for all versions of PHP
+8.6.2007 - Feature: Iconv extension can be used without mbstring extension
+5.6.2007 - Feature: Dojo library upgraded to version 0.4.3 (security reasons)
+
+5.6.2007 - Release 1.6.1
+
+5.6.2007 - BugFix: Input fields needs to have always LTR direction also in case of RTL languages, because some values were messed in RTL direction
+5.6.2007 - BugFix: Some POP3 servers starts message with incorrect header From - added workaround
+4.6.2007 - Feature: Added Ticket comment invisible to simple user
+3.6.2007 - Feature: Added support of right to left written languages
+3.6.2007 - Feature: Added Hebrew translation
+3.6.2007 - Feature: Added Dutch translation
+
+1.6.2007 - Release 1.6.0
+
+31.5.2007 - Feature: Notification mail will have address From defined depending on queue email parameter (if such mail account is defined)
+31.5.2006 - Feature: Move mail to new ticket - usefull in case customer start to as questions not related to current ticket
+31.5.2007 - BugFix: In some versions of php is iconv function not identified correctly also in case iconv extension is activated
+31.5.2007 - Feature: Because some subjects are too long, we moved number of mails in ticket next to ticket id
+29.5.2007 - BugFix: AddCc and AddBcc links in reply form generated javascript error
+29.5.2007 - Feature: Read status will not be changed for user, which did the change in ticket
+29.5.2007 - BugFix: Change mysql client connection characterset automatically to UTF-8
+
+28.5.2007 - Release 1.5.4
+
+28.5.2007 - BugFix: Add New Ticket correct preset of Queue and Priority
+28.5.2007 - BugFix: Add New Ticket by user assigns the 'new' status
+25.5.2007 - BugFix: Ticket Reply - assign no agent
+25.5.2007 - BugFix: IE6 DateRangePicker Design Fix
+25.5.2007 - Feature: Outbox functionality (sending of mails on background)
+25.5.2007 - Feature: Display last processing time of each mail account
+25.5.2007 - Feature: New Thai translation of SupportCenter
+24.5.2007 - BugFix: Opera 9 - Ticket Detail and Reply - Status/Owner/Priority/Queues work properly
+23.5.2007 - Feature: Before saving filter apply all modifications of filter (usability)
+
+23.5.2007 - Release 1.5.3
+
+23.5.2007 - BugFix: Fixxed different issues with ticket filters
+22.5.2007 - Feature: Display confirmation message after user is created by admin or agent
+22.5.2007 - BugFix: Performance problems of Work Time report fixed
+21.5.2007 - BugFix: if zlib.output_compression was switched on in php, application generated javascript error
+21.5.2007 - BugFix: set_time_limit generated warning in safe_mode
+21.5.2007 - Feature: PDF export of ticket
+21.5.2007 - BugFix: Fixed issue with FreeBSD and iconv identification
+18.5.2007 - BugFix: Show similar tickets filter switch generated sql error
+18.5.2007 - BugFix: Submit ticket form didn't worked in case PEAR was installed in other path on server and open_basedir restriction was applied
+17.5.2007 - Feature: Spanish translation of user interface added to SupportCenter
+17.5.2007 - Feature: Admin can define if agent will see own statistic reports
+16.5.2007 - Feature: Speed optimization when answering ticket
+16.5.2007 - Feature: Remote Procedure Call timeout to avoid waiting for infinite requests
+
+16.5.2007 - Release 1.5.2
+
+16.5.2007 - Feature: display by default tickets of user in user detail (workflow optimalization)
+16.5.2007 - BugFix: Ticket detail in user detail didn't worked
+16.5.2007 - BugFix: Refresh tickets list after mail was sent from SupportCenter
+16.5.2007 - Feature: Variables in queue notification mails can be used also in subject of mail
+
+15.5.2007 - Release 1.5.1
+
+15.5.2007 - BugFix: Filter settings timing
+15.5.2007 - BugFix: Saving of filters
+15.5.2007 - BugFix: Memory Limit check during sending of big attachments failed
+15.5.2007 - BugFix: File Manager didn't worked on Unix systems (case sensitive filename request failed)
+
+14.5.2007 - Release 1.5.0
+
+14.5.2007 - Feature: Added German translation of SupportCenter user interface
+14.5.2007 - BugFix: Sometimes was selected Queue not saved when new ticket was created.
+13.5.2007 - Feature: Customer name and email added to ticket detail header
+11.5.2007 - Feature: File Manager - possible to delete old not needed attachments
+11.5.2007 - Feature: New report - Work time of agents
+10.5.2007 - Feature: Admin can define in mail account Name in from address of mails sent from SupportCenter. If this name is empty, agent's name is used.
+10.5.2007 - Feature: Admin can define, if agent can see all Queues or just queues, where he has rights
+10.5.2007 - Feature: Admin can define if agent will be allowed to delete tickets
+9.5.2007 - BugFix: Filter user type didn't worked in version 1.4.1
+9.5.2007 - Feature: optimization of number of requests to server (added pushing of values to client)
+7.5.2007 - Feature: New Support Performance Report
+4.5.2007 - Feature: Distribute database maintainance load randomly over time, so not all events will run in same mminute
+4.5.2007 - BugFix: Upgrade wizard loaded update directories in wrong order
+4.5.2007 - Feature: Disply ticket owner name with bold in case ticket owner is same as logged in agent
+
+4.5.2007 - Release 1.4.1
+
+4.5.2007 - BugFix: Filter in Agent Logins Report didn't worked
+4.5.2005 - Feature: Added support for iconv functions in case iconv module is enabled in php (e.g. windows-1250 encoding can't be converted by mbstring module)
+
+2.5.2007 - Release 1.4.0
+
+2.5.2007 - Feature: Convert HTML mails to text and attach HTML version as attachment to mail (Prevents attacks of viruses and other ways of attacks)
+2.5.2007 - Feature: Table navigation elements are displayed also on the top of tables (Better usability for users in case more tickets is displayed on one page)
+2.5.2007 - Feature: Convert all html mails to text and leave original HTML mail body as attachment
+1.5.2007 - Feature: Grid Loading Indicator added to tables to visualize loading of tables
+1.5.2007 - BugFix: Notifications and forwarding didn't worked correctly in case admin or agent was logged in and in same browser submitted new ticket from html contact form
+
+30.4.2007 - Release 1.3.6
+
+30.4.2007 - BugFix: Editor in IE6 was moved out from range randomly.
+30.4.2007 - BugFix: Client CPU usage optimization (Browser used CPU also in time, when SupportCenter did nothing)
+30.4.2007 - BugFix: Reset Add Gateway form before it is opened
+29.4.2007 - Feature: Measurement of request execution time
+28.4.2007 - Feature: Added option to divide same mail received through more mail accounts to more tickets or save all copies of the same mail to one ticket
+28.4.2007 - Feature: In upgrade wizard will be printed all sql statements executed in current upgrade step
+28.4.2007 - BugFix: Failed to decode message XXX with error could not create file
+28.4.2007 - Feature: Ticket colors use also in user detail view
+28.4.2007 - Feature: Analyze tables each 24 hours (recompute mysql indexes)
+28.4.2007 - Feature: Optimize table if is wasted more than 1% of table space - executed each 24 hours
+27.4.2007 - Feature: Also messages before application will start are translated (e.g. Booting...)
+27.4.2007 - BugFix: Html submit form generated error in case agent or admin was logged in the same browser session and submitting new ticket
+26.4.2007 - Feature: Periodical job messages will be translated into default language selected in Configuration form
+26.4.2007 - Feature: Skipped loading of languages list in login window (Optimized sturtup time)
+26.4.2007 - Feature: Improved speed of language files loading in server (skipped JSON parser)
+26.4.2007 - Feature: Languages files are at build time automatically rebuilded and new translations from English are added to every other translation file if it is missing
+
+25.4.2007 - Release 1.3.5
+
+25.4.2007 - BugFix: In some cases Notifications were delivered in not right condition match
+25.4.2007 - Feature: Ticket colors configurable by Admin in Settings->Configuration
+25.4.2007 - Feature: Default language configurable in Settings->Configuration
+24.4.2007 - BugFix: Switching editor from text mode back to html caused problems in case text value contained html tags.
+24.4.2007 - BugFix: Requests containing characters \" failed
+24.4.2007 - Feature: Refined conditions (user can define also ticket status, queue and priority condiotion) in notifications
+
+23.4.2007 - Release 1.3.4
+
+23.4.2007 - BugFix: Apostrofs in Html submit ticket form were extra quoted in case magic_qoutes were switch on in php
+23.4.2007 - BugFix: DateRange picker - custom date range in case of not selected value set value of date to year 1970
+23.4.2007 - BugFix: In New Ticket form shouldn't be displayed link for opening hidden mails, because there are no other mails in new ticket
+23.4.2007 - BugFix: Creating new ticket by agent or admin failed with error: Insert failed: Duplicate record
+
+23.4.2007 - Release 1.3.3
+
+23.4.2007 - BugFix: SSL support didn't worked for sending mails through SMTP servers
+
+22.4.2007 - Release 1.3.2
+
+22.4.2007 - Feature: Added SSL test
+22.4.2007 - Feature: Added mail account condition in parsing rules
+22.4.2007 - BugFix: SSL support didn't worked in case POP3 server port was different as 110
+
+20.4.2007 - Release 1.3.1
+
+20.4.2007 - Added language Portuguese pack
+20.4.2007 - Feature: Delete button in ticket detail
+20.4.2007 - Feature: In case agent or admins creates new ticket, as customer assignet to ticket is defined first email in TO field
+20.4.2007 - BugFix: If agent answered mail through mail gateway, status of ticket should be changed to Awaiting reply
+
+19.4.2007 - Release 1.3.0
+
+19.4.2007 - Feature: Removed field owners from Mail Gateway form because of duplicity
+19.4.2007 - Feature: Redesigned DateRange widget
+19.4.2007 - Feature: Forward mails also in case ticket was created from submit ticket form
+
+18.4.2007 - Release 1.2.7 (1.2.6 was just internal release)
+
+18.4.2007 - Feature: Mail forwarding - MailGateway
+17.4.2007 - Feature: New editor
+17.4.2007 - Feature: Agent is able to define multiple notifications in his account with different conditions
+16.4.2007 - Feature: Added filter in Agent Logins report
+16.4.2007 - Feature: After reply of ticket, set status of ticket for user, which replied ticket to read
+16.4.2007 - Feature: Speedup of ticket detail loading - body of first opened mail is loaded in same request as list of mails in ticket
+16.4.2007 - Feature: Agent is not allowed to update other agent's profile or admin's profile
+16.4.2007 - Feature: Automatically open update toolbar in user detail tickets list
+16.4.2007 - BugFix: On cancel event enable buttons "Send" and "Send and Resolve" in ticket reply form
+12.4.2007 - Feature: HTML ticket submit form avaible - allows easy integration into existing web sites
+11.4.2007 - Feature: Mail account rights - Admin can define on each mail account, which agents can answer through mail account
+
+11.4.2007 - Release 1.2.5
+
+11.4.2007 - Feature: Doesn't allow save queue without notification mail body if notification is switched on
+11.4.2007 - Feature: Date Range picker redesigned - next to human date range also custom range is possible
+11.4.2007 - BugFix: Parsing rules - queue setup fixed
+10.4.2007 - Feature: load libraries from browser cache if avaible (startup speed of application improved)
+10.4.2007 - Feature: mail address autocomplete functionality from mail addresses available in user's database
+10.4.2007 - Feature: show Updates toolbar in tickets list automatically, when row is selected
+10.4.2007 - Feature: go to ticket id - direct jump to ticket with entered ticket id
+10.4.2007 - Feature: renamed language files extension from .json to .js because of easier installation on IIS, where .json extension is not listed in supported file extensions by default
+10.4.2007 - Feature: grid background color configurable from css
+06.4.2007 - Feature: display mail count in () next to subject just in case ticket contains more mails as one
+05.4.2007 - BugFix: calculation of mails in ticket fixed (when received new mail in existing ticket, count was not increased)
+05.4.2007 - BugFix: mail_body parameter returned not the right mail in personal notifications
+
+05.4.2007 - Release 1.2.4
+
+05.4.2007 - BugFix: Adding new Queue was not possible because of javascript bug in client
+
+05.4.2007 - Release 1.2.3
+
+05.4.2007 - BugFix: installator improvements and fixed 
+05.4.2007 - BugFix: running on IIS should work now 
+
+05.4.2007 - Release 1.2.2
+
+04.4.2007 - Feature: In personal notification mail user can define variable ${mail_body}. It will be replaced with content of last mail body in ticket.
+04.4.2007 - Feature: In Queue notification is possible to add original mail body from customer into notification mail by variable ${mail_body}
+04.4.2007 - BugFix: Path computation on BSD systems fixed
+04.4.2007 - Feature: User can select ticket queue on login page and in form Submit new ticket
+04.4.2007 - BugFix: download of attachments will work now also on php 4.x.x
+04.4.2007 - BugFix: added mails_count column into sql create script (it was missing in build of release 1.2.1)
+04.4.2007 - Feature: Admin can setup own format of ticket Id
+
+02.4.2007 - Release 1.2.1
+
+01.4.2007 - BugFix: Sql Error in user notifications fixed
+30.3.2007 - Feature: Added autocomplete field for all email filter fields
+29.3.2007 - Feature: display ticket subject with bold text if it was not readed by user and normal if user opened ticket minimum once. On each change of ticket reset this status for all users.
+
+29.3.2007 - Release 1.2.0
+
+29.3.2007 - Feature: Notifications - possibility to switch off check of changes of queue, priority, owner and status separatelly by checkboxes
+27.3.2007 - BugFix: User detail - tickets fixed filling of queues select box
+27.3.2007 - Feature: Agent and Administrator notifications added to MyProfile
+27.3.2007 - BugFix: Login screen - html table design replaced
+27.3.2007 - Feature: Modal dialog background dynamically resizes itself with the browser window
+27.3.2007 - BugFix: Add/Edit Queue is accessible for IE6 users too
+27.3.2007 - BugFix: Centered dialogs are in the center of viewport by now
+27.3.2007 - BugFix: Browser native object Error normalization
+27.3.2007 - Feature: Refresh internal data if queues, agents or mail accounts are changed and refresh them also every 15 minutes. (Internal data are used e.g. in filters for agents, queues, mail accounts filters)
+27.3.2007 - Feature: Added status work in progress
+
+26.3.2007 - Release 1.1.1
+
+26.3.2007 - Feature: Agent logins report
+24.3.2007 - BugFix: conversion of text body from original encoding into UTF-8
+24.3.2007 - Feature: Hide ticket id from subject - new configuration switch
+24.3.2007 - BugFix: Insert new ticket fixed
+
+23.3.2007 - Release 1.0.5
+
+23.3.2007 - BugFix: Client templates can contain <object> tag also in IE
+23.3.2007 - BugFix: Session not active fix
+23.3.2007 - Feature: New filter in tickets form: Show all tickets related to selected agents
+
+22.3.2007 - Release 1.0.4
+
+23.3.2007 - Feature: Added upgrade wizard to new versions
+22.3.2007 - Feature: Agent should be able to modify other user's profile except user type
+22.3.2007 - Feature: Notify user with autoresponder from Queue if ticket was submitted from contact form
+22.3.2007 - Feature: Fill in To address also in case it is ticket submitted by submit new ticket form
+22.3.2007 - BugFix: Change from plain text to richtext didn't converted new line breaks correctly
+21.3.2007 - BugFix: Send mail to more recipients - mail format check fixed
+
+21.3.2007 - Release 1.0.3
+
+21.3.2007 - Feature: Advanced Login Screen Customization
+21.3.2007 - Feature: New filter "Mail Account" added to ticket list
+21.3.2007 - Feature: Display number of mails in ticket next to ticket subject in tickets list
+21.3.2007 - Feature: Click on email in mail detail will open user detail form in new window
+21.3.2007 - BugFix: After logout shouldn't be updated tickets table
+21.3.2007 - Feature: Ticket submit form on login page
+20.3.2007 - Feature: Added possibility to display 250 rows per page in every grid
+20.3.2007 - BugFix: Switching between users showed in tickets list entries of different user for short time
+20.3.2007 - Feature: Added complete Slovak translation of SupportCenter
+20.3.2007 - BugFix: Fixed displaying of html code in subject and plain text body
+20.3.2007 - BugFix: Link Show history was hidden forever in case user created new ticket
+20.3.2007 - Feature: Added button "Resolve ticket" to users ticket detail form
+20.3.2007 - Feature: More strict rules for sending queue autoresponders to protect system against mail wars
+19.3.2007 - Feature: Branding - enjoy custom header and footer
+19.3.2007 - Feature: Don't try to send mails bigger as php memory_limit
+19.3.2007 - BugFix: Width of column IP address corrected
+
+19.3.2007 - Release 1.0.2
+
+19.3.2007 - Security: Just simple user will receive notification email from Queue with hash in link (autologin information). Admins and Agents have to login manually or by "Remember Me" function.
+19.3.2007 - Feature: Expand all mails in ticket
+19.3.2007 - BugFix: Upload of bigger files fixed
+19.3.2007 - BugFix: Mail headers of mail detail should be collapsed together with mail
+17.3.2007 - BugFix: Delete mail functionality in parsing rules fixed
+16.3.2007 - BugFix: Saving settings under PHP5 fixed
+
+15.3.2007 - Release 1.0.1

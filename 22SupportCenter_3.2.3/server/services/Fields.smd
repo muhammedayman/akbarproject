@@ -1,0 +1,50 @@
+{"SMDVersion":".1",
+ "objectName":"Fields",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Fields",
+ "methods":
+ 	[
+		{"name":"getFieldsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteField",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"insertField",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateField",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getField",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getTicketCustomFieldsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateCustomFields",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

@@ -1,0 +1,14 @@
+{"SMDVersion":".1",
+ "objectName":"Logins",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Logins",
+ "methods":
+ 	[
+		{"name":"getLoginsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

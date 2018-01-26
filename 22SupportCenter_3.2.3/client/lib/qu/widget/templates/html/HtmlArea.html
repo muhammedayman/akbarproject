@@ -1,0 +1,90 @@
+<div class="quHtmlArea">
+	<div class="toolbar">
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/bold.gif" cmd="bold" class="button" />
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/italic.gif" cmd="italic" class="button" />
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/underline.gif" cmd="underline" class="button" />
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/strikethrough.gif" cmd="strikethrough" class="button" />
+		
+		<img src="${dojoRoot}../qu/widget/templates/images/htmlarea/delimiter.gif" style="width: 1px; padding-right: 1px; padding-right: 1px;" class="button"/>
+		
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/justifyleft.gif" cmd="JustifyLeft" class="button" />
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/justifyright.gif" cmd="JustifyRight" class="button" />
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/justifycenter.gif" cmd="JustifyCenter" class="button" />
+		<img dojoAttachEvent="onclick:onToolbarClick" src="${dojoRoot}../qu/widget/templates/images/htmlarea/justifyfull.gif" cmd="JustifyFullt" class="button" />
+
+		<img src="${dojoRoot}../qu/widget/templates/images/htmlarea/delimiter.gif" style="width: 1px; padding-right: 3px; padding-right: 1px;" class="button"/>
+
+		<select dojoAttachEvent="onchange:onFontChange" cmd="FontName" style="margin-bottom: 5px;">
+			<option value="" selected="selected">Font Name</option>
+			<option value="arial">Arial</option>
+			<option value="Arial Narrow">Arial Narrow</option>
+			<option value="courier">Courier</option>
+			<option value="cursive">Cursive</option>
+			<option value="fantasy">Fantasy</option>
+			<option value="georgia">Georgia</option>
+			<option value="impact">Impact</option>
+			<option value="monospace">Monospace</option>
+			<option value="serif">Serif</option>
+			<option value="sans-serif">Sans Serif</option>
+			<option value="tahoma">Tahoma</option>
+			<option value="times">Times</option>
+			<option value="verdana">Verdana</option>
+		</select>
+		<select dojoAttachEvent="onchange:onFontChange" cmd="FontSize" style="margin-bottom: 5px;">
+			<option value="" selected="selected">Font Size</option>
+			<option value="1">1 (8pt)</option>
+			<option value="2">2 (10pt)</option>
+			<option value="3">3 (12pt)</option>
+			<option value="4">4 (14pt)</option>
+			<option value="5">5 (18pt)</option>
+			<option value="6">6 (24pt)</option>
+			<option value="7">7 (36pt)</option>
+		</select>
+		<select dojoAttachEvent="onchange:onFontChange" cmd="ForeColor" style="margin-bottom: 5px;">
+			<option value="" selected="selected">Color</option>
+			<option value="black" style="background-color: black; color: white;">black</option>
+			<option value="silver" style="background-color: silver">silver</option>
+			<option value="gray" style="background-color: gray">gray</option>
+			<option value="white" style="background-color: white">white</option>
+			<option value="maroon" style="background-color: maroon">maroon</option>
+			<option value="red" style="background-color: red">red</option>
+			<option value="purple" style="background-color: purple">purple</option>
+			<option value="fuchsia" style="background-color: fuchsia">fuchsia</option>
+			<option value="green" style="background-color: green">green</option>
+			<option value="lime" style="background-color: lime">lime</option>
+			<option value="olive" style="background-color: olive">olive</option>
+			<option value="yellow" style="background-color: yellow">yellow</option>
+			<option value="navy" style="background-color: navy">navy</option>
+			<option value="blue" style="background-color: blue">blue</option>
+			<option value="teal" style="background-color: teal">teal</option>
+			<option value="aqua" style="background-color: aqua">aqua</option>
+		</select>
+		<select dojoAttachEvent="onchange:onFontChange" cmd="BackColor" style="margin-bottom: 5px;">
+			<option value="" selected="selected">Background Color</option>
+			<option value="black" style="background-color: black; color: white;">black</option>
+			<option value="silver" style="background-color: silver">silver</option>
+			<option value="gray" style="background-color: gray">gray</option>
+			<option value="white" style="background-color: white">white</option>
+			<option value="maroon" style="background-color: maroon">maroon</option>
+			<option value="red" style="background-color: red">red</option>
+			<option value="purple" style="background-color: purple">purple</option>
+			<option value="fuchsia" style="background-color: fuchsia">fuchsia</option>
+			<option value="green" style="background-color: green">green</option>
+			<option value="lime" style="background-color: lime">lime</option>
+			<option value="olive" style="background-color: olive">olive</option>
+			<option value="yellow" style="background-color: yellow">yellow</option>
+			<option value="navy" style="background-color: navy">navy</option>
+			<option value="blue" style="background-color: blue">blue</option>
+			<option value="teal" style="background-color: teal">teal</option>
+			<option value="aqua" style="background-color: aqua">aqua</option>
+		</select>
+	</div>
+	<iframe
+		frameborder="0"
+		dojoAttachPoint="iframeNode"
+		src="about:blank"
+		onload="try{this.contentWindow.document.designMode='on';}catch(e){};if (typeof this.loadCount == 'undefined') {this.loadCount = 0;} this.loadCount++; if (this.loadCount > 1) {this.onready();}"
+		>
+	</iframe>
+	<div style="display:none;" dojoAttachPoint="containerNode"></div>
+</div>

@@ -1,0 +1,99 @@
+<div id="${this.widgetId}" class="quGrid">
+	<div dojoAttachPoint="containerNode">
+	</div>
+	<div dojoAttachPoint="headerNavigationNode" class="headerRow" style="background-color:#EEEEEE;">
+	
+		<table border="0" width="100%">
+			<tr>
+				<td style="width: 131px;">
+					<span dojoAttachPoint="multiselectNode1">
+						<a href="javascript://" dojoAttachPoint="cmdSelect1">all</a>
+						<span>/</span>
+						<a href="javascript://" dojoAttachPoint="cmdDeselect1">none</a>
+					</span>
+				</td>
+				<td style="width: 20px;">
+					<img src="lib/qu/widget/templates/images/loading_grid.gif" style="display: none;" dojoAttachPoint="gridLoadingIndicator1">
+				</td>
+				<td>
+					<a href="javascript://" dojoAttachPoint="cmdRefresh1">Refresh</a>
+				</td>
+				<!-- td>
+					<span style="margin-left:2em" dojoAttachPoint="lblRows1">Rows </span>
+					<select dojoAttachPoint="heightNode1">
+						<option value="10">10</option>
+						<option value="25">25</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+						<option value="250">250</option>
+						<option value="500">500</option>
+						<option value="1000">1000</option>
+					</select>
+				</td-->
+				<td style="text-align:right">
+					<span dojoAttachPoint="pagerNode1" style="margin-left:1em;">
+						<a href="javascript://" dojoAttachPoint="pagerPrevious1">&lt;&lt;</a>
+						<span dojoAttachPoint="fromToNode1" style="font-weight:bold;">0 - 0</span>
+						<span dojoAttachPoint="ofNode1"></span>
+						<span dojoAttachPoint="countNode1" style="font-weight:bold;">0</span>
+						<a href="javascript://" dojoAttachPoint="pagerNext1">&gt;&gt;</a>
+					</span>
+				</td>
+			</tr>
+		</table>
+	
+	
+	</div>
+
+
+	<div dojoAttachPoint="gridNode" class="grid">
+		<table dojoAttachPoint="tableNode" class="quTable">
+			<thead dojoAttachPoint="theadNode">
+				<tr dojoAttachPoint="theadTrNode">
+				</tr>
+			</thead>
+			<tbody dojoAttachPoint="tbodyNode" style="display:none;">
+			</tbody>
+		</table>
+	</div>
+	<div dojoAttachPoint="footerNode" class="footerRow" style="background-color:#EEEEEE;">
+		<table border="0" width="100%">
+			<tr>
+				<td>
+					<span dojoAttachPoint="multiselectNode">
+						<a href="javascript://" dojoAttachPoint="cmdSelect">all</a>
+						<span>/</span>
+						<a href="javascript://" dojoAttachPoint="cmdDeselect">none</a>
+					</span>
+				</td>
+				<td style="width: 20px;">
+					<img src="lib/qu/widget/templates/images/loading_grid.gif" style="display: none;" dojoAttachPoint="gridLoadingIndicator">
+				</td>
+				<td>
+					<a href="javascript://" dojoAttachPoint="cmdRefresh">Refresh</a>
+				</td>
+				<td>
+					<span style="margin-left:2em" dojoAttachPoint="lblRows">Rows </span>
+					<select dojoAttachPoint="heightNode">
+						<option value="10">10</option>
+						<option value="25">25</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+						<option value="250">250</option>
+						<option value="500">500</option>
+						<option value="1000">1000</option>
+					</select>
+				</td>
+				<td style="text-align:right">
+					<span dojoAttachPoint="pagerNode" style="margin-left:1em;">
+						<a href="javascript://" dojoAttachPoint="pagerPrevious">&lt;&lt;</a>
+						<span dojoAttachPoint="fromToNode" style="font-weight:bold;">0 - 0</span>
+						<span dojoAttachPoint="ofNode"></span>
+						<span dojoAttachPoint="countNode" style="font-weight:bold;">0</span>
+						<a href="javascript://" dojoAttachPoint="pagerNext">&gt;&gt;</a>
+					</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

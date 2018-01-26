@@ -1,0 +1,38 @@
+{"SMDVersion":".1",
+ "objectName":"Priorities",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Priorities",
+ "methods":
+ 	[
+		{"name":"getPrioritiesList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deletePriority",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"insertPriority",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updatePriority",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getPriority",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

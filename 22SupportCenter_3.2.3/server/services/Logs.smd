@@ -1,0 +1,26 @@
+{"SMDVersion":".1",
+ "objectName":"Logs",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Logs",
+ "methods":
+ 	[
+		{"name":"getLogsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteLog",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getLogUsersList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

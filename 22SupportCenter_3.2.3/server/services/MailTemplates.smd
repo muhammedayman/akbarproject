@@ -1,0 +1,38 @@
+{"SMDVersion":".1",
+ "objectName":"MailTemplates",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=MailTemplates",
+ "methods":
+ 	[
+		{"name":"insertTemplate",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteTemplate",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateTemplate",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getTemplatesList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getTemplatesFormList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

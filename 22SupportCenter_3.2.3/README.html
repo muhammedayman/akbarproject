@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>SupportCenter - README</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="readme.css" type="text/css" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+ 
+      <h1>SupportCenter User's Guide</h1>
+ 	  <p> This document is just short installation cookbook not updated with every new feature. 
+ 	  Full installation guide updated periodically you can find here: 
+ 	  <a href="http://support.qualityunit.com/knowledgebase/supportcenter.html">SupportCenter documentation</a>
+ 	  </p>
+ 	  
+ 	  
+      <h1>SupportCenter installation instructions</h1>
+		<h2>Requirements</h2>
+		<ul>
+			<li>any platform that is able to run webserver+PHP (e.g. Apache, <a
+			href="http://httpd.apache.org">httpd.apache.org</a>) and MySQL server,
+			successfully tested on MS Windows and GNU/Linux
+			
+			</li>
+			<li>PHP 4.3.0 or higher
+
+			<table>
+			<tr><td valign="top">homepage:</td><td><a href="http://php.net">php.net</a>
+			
+			</td></tr>
+			</table>
+			</li>
+			<li>MySQL 4.1 or higher
+			
+			<table>
+			<tr><td valign="top">homepage:</td><td><a href="http://mysql.com">mysql.com</a>
+			
+			</td></tr>
+			</table>
+			</li>
+			<li>Javascript enabled web browser
+
+			<pre>
+			  - Firefox 1.0+ (as well as Mozilla)
+			  - Internet Explorer 6+
+			  - Opera 8.5+
+			  - Safari 2.0.x+
+			  - Konqueror 3.5+
+			</pre>
+			</li>
+		</ul>
+<h2>Preliminary steps</h2>
+<p>
+You should create the database and database user with mysql shell by
+executing the sql commands below:
+</p>
+<pre>
+  CREATE DATABASE database_name;
+  GRANT ALL PRIVILEGES ON database_name.* TO database_user@localhost IDENTIFIED BY &quot;database_password&quot; WITH GRANT OPTION;
+</pre>
+<p>
+Customize it to match your database_name, database_user, and
+database_password.
+</p>
+<p>
+You could also use some MySql administration tool (such as phpMyAdmin or CPanel) to
+perform this step in more user-friendly way.
+</p>
+<h2>Automatic installation</h2>
+<p>
+	Before you can start automatic installation wizard, you need to copy all files from distribution package to your server.
+</p>
+
+<p>
+Automatic installer needs to have write enabled access to directory
+server/settings. On unix/linux systems you can grant access to it as
+follows:
+</p>
+<pre>
+  chmod 777 server/settings
+</pre>
+<p>
+After installation you can change it back to more safe permissions (chmod
+755 server/settings).
+</p>
+<p>
+Now point your browser to root directory of SupportCenter, e.g. <a
+href="http://yourdomain.com/SupportCenter">yourdomain.com/SupportCenter</a>/
+(this depends on configuration of your web server and location of
+SupportCenter directory). The installer should start automatically, but you
+could also launch it directly with url <a
+href="http://yourdomain.com/SupportCenter/server/install">yourdomain.com/SupportCenter/server/install</a>.
+</p>
+<p>
+After start, installer will guide you through the rest of installation.
+</p>
+<h2>Post-installation steps</h2>
+<p>
+<b>IMPORTANT</b> If installation was successfull, you should remove
+directory server/install for security reasons.
+</p>
+<p>
+Set up cron on unix/linux systems
+to execute command below every minute. This command will run job that is
+necessary for receiving emails and sending email notifications:
+</p>
+<pre>
+  cd path_to_supportcenter/server &amp;&amp; php jobs.php
+</pre>
+<p>
+You can edit cron jobs with command:
+</p>
+<pre>
+  crontab -e
+</pre>
+<p>
+The cron record will look like this:
+</p>
+<pre>
+  * * * * * php path_to_supportcenter/server/jobs.php
+</pre>
+<p>
+On MS Windows, you could use scheduler to schedule this job.
+</p>
+<h2>Running</h2>
+<p>
+Point your browser into root directory of SupportCenter, eg <a
+href="http://yourdomain.com/SupportCenter">yourdomain.com/SupportCenter</a>/
+(this depends on configuration of your web server and location of
+SupportCenter directory).
+</p>
+<p>
+Login with username/email and password of administrator&#8217;s account,
+that you have created during installation.
+</p>
+
+<h2>How to Upgrade to newest version ?</h2>
+<p>
+  You should do following steps if you like to upgrade to newest avaible verision of SupportCenter:
+</p>
+<ol>
+  <li>
+    Download newest installation file from your members area (<a href="http://www.qualityunit.com/memebers/" target="_blank">Memebers area</a>)
+  </li>
+  <li>
+    Make backup of your database and old installation files (if something will go wrong, you can always get back to old release, which worked for you)
+  </li>
+  <li>
+    Replace old installation files with new files
+  </li>
+  <li>
+    Follow upgrade wizard: http://yourdomain/server/install/index.php
+  </li>
+  <li>
+    You are ready.
+  </li>
+</ol>
+
+
+<h2>Application Setup</h2>
+<p>
+  First steps after successfull installation of SupportCenter should be:
+</p>
+<ol>
+  <li>
+    Login as administrator
+  </li>
+  <li>
+    Check configuration (Settings - Configuration)
+  </li>
+  <li>
+    Define Mail Accounts (Settings - Mail Accounts)
+  </li>
+  <li>
+    Define Queues (Settings - Queues)
+  </li>
+  <li>
+    Define Parsing Rules (Settings - Rules)
+  </li>
+</ol>
+
+<h2>How to integrate submit ticket form to my existing web site ?</h2>
+<p>
+	This is very simple. :-)<br/>
+	Just try it with our example php called submit_form.php distributed with installation files of SupportCenter.<br/>
+	Before you will start it, please check all configuration variables inside this file <br/>
+	(e.g. path to SupportCenter, name of domain, where is installed SupportCenter and similar)<br/>
+	You can change design and layout of form as you like so, that it will fit your website design.<br/>
+</p>
+
+		
+		<h2>Need more help ? Contact Us!</h2>
+		<p>
+		  <b>Web:</b> <a href="www.qualityunit.com/supportcenter/">www.qualityunit.com/supportcenter/</a><br/>
+		  <b>Email:</b> <a href="mailto:support@qualityunit.com">support@qualityunit.com</a>. <br />
+		  We will try to answer every ticket within 24 hours (except weekends).<br /><br />
+		  <b>Phone:</b> +421 903 776 925 (8:00 - 20:00 GMT+1)<br/>
+
+		  <b>Address:</b> <br />
+		  Quality Unit, s.r.o.<br />
+		  Tomanova 80/C<br />
+		  83107 Bratislava<br />
+		  Slovakia<br /><br />
+		  
+		  <b>Forum</b><br />
+		  For discussions about SupportCenter we prepared our <a href="http://forum.qualityunit.com">forum</a>.
+		</p>
+    </div>
+   </div>
+
+
+  </div>
+
+</body>
+</html>

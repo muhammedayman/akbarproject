@@ -1,0 +1,18 @@
+<style type="text/css">
+
+.body {
+    margin: 0;
+    border-color: grey;
+}
+
+#progressBar {
+    margin: 0;
+}
+
+#progressBar li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+</style>

@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+.quHtmlEditor {
+	position: relative;
+}
+
+.quHtmlEditor .header {
+	position: relative;	
+}
+
+.quHtmlEditor .tabs {
+	position: absolute;
+	height: 20px;
+	right: 0px;
+}
+
+.quHtmlEditor .tab {
+	float: left;
+	background-color: #EEEEEE;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.quHtmlEditor .tabActive {
+	background-color: #DDDDDD;	
+}
+
+.quHtmlEditor .content {
+	position: relative;
+	top: 20px;
+	background-color: #DDDDDD;
+	text-align: left;
+	padding: 0px;
+	border: 1px solid #DDDDDD;
+	overflow: hidden;
+}
+
+.quHtmlEditor .content textarea {
+	width: 100%;
+	border: none;
+}

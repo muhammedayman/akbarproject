@@ -1,0 +1,32 @@
+{"SMDVersion":".1",
+ "objectName":"Filters",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Filters",
+ "methods":
+ 	[
+		{"name":"getFiltersList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteFilter",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"insertFilter",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateFilter",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

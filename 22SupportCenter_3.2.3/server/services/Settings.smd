@@ -1,0 +1,20 @@
+{"SMDVersion":".1",
+ "objectName":"Settings",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Settings",
+ "methods":
+ 	[
+		{"name":"getSettingsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateSetting",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

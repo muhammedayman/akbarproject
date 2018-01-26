@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+.quRichText {
+	position: relative;
+}
+
+.quRichText .header {
+	position: relative;	
+}
+
+.quRichText .tabs {
+	position: absolute;
+	height: 20px;
+	right: 0px;
+}
+
+.quRichText .tab {
+	float: left;
+	background-color: #EEEEEE;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.quRichText .tabActive {
+	background-color: #DDDDDD;	
+}
+
+.quRichText .content {
+	position: relative;
+	top: 20px;
+	background-color: #DDDDDD;
+	text-align: center;
+	padding: 3px;
+	padding-top: 2px;
+	overflow: hidden;
+}
+
+.quRichText .editor {
+}
+
+.quRichText .content textarea {
+	width: 100%;
+	border: none;
+}

@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+.quListBox {
+	border: none;
+}
+
+.quListBox .content {
+	border: 1px solid #bbb;
+	overflow: auto;
+	cursor: default;
+}
+
+.quListBox .option {
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid #DDDDDD;	
+	cursor: default;
+	line-height: 1.5em;
+}
+
+.quListBox .selected {
+	background-color: black;
+	color: white;
+	cursor: default;
+}
+
+.quListBox .nonselected {
+	background-color: white;
+	color: black;
+	cursor: default;
+}
+
+.quListBox .label {
+	cursor: default;
+}

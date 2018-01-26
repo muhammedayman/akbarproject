@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+.quList {
+	border: none;
+}
+
+.quList .content {
+	overflow: auto;
+	cursor: default;
+}
+
+.quList .option {
+	background-color: white;
+	border-bottom: 1px solid #DDDDDD;	
+	cursor: pointer;
+	line-height: 1.4em;
+	padding-left: 2px;
+}
+
+.quList .option:hover {
+	background-color: #e0ecff;
+}
+
+.quList .selected {
+	background-color: #C3D9FF;
+	color: #364157;
+	border-bottom: 1px solid white;	
+}
+
+.quList .nonselected {
+	background-color: white;
+	color: black;
+}
+
+.quList .hover {
+	background-color: #e0ecff;	
+}
+
+.quList .label {
+	cursor: default;
+}

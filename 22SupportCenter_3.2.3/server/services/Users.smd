@@ -1,0 +1,126 @@
+{"SMDVersion":".1",
+ "objectName":"Users",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Users",
+ "methods":
+ 	[
+		{"name":"login",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"logout",
+    	 "parameters":
+    	 	[]
+    	},
+		{"name":"requestNewPassword",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},    	
+		{"name":"updateLastAction",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},    	
+		{"name":"getLoggedInUser",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},    	
+		{"name":"updateLoggedInUser",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},    	
+    	{
+    	"name":"getUsersList",
+    	"parameters":
+    		[
+    		{"name":"params", "type":"OBJECT"}
+    		]
+    	},
+    	{
+    	"name":"getUserEmailsList",
+    	"parameters":
+    		[
+    		{"name":"params", "type":"OBJECT"}
+    		]
+    	},
+    	{
+    	"name":"getAgents",
+    	"parameters":
+    		[
+    		{"name":"params", "type":"OBJECT"}
+    		]
+    	},
+        {
+        "name":"deleteUser",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {
+    	"name":"registerNewUser",
+    	"parameters":
+    		[
+    		{"name":"params", "type":"OBJECT"}
+    		]
+    	},
+        {
+    	"name":"insertUser",
+    	"parameters":
+    		[
+    		{"name":"params", "type":"OBJECT"}
+    		]
+    	},
+        {
+        "name":"hashLogin",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {
+        "name":"getOnlineAgents",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {
+        "name":"getUser",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {
+        "name":"updateUser",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {
+        "name":"authenticate",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {
+        "name":"getCustomFieldValues",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        }
+	]
+}

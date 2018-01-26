@@ -1,0 +1,26 @@
+{"SMDVersion":".1",
+ "objectName":"Mails",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Mails",
+ "methods":
+ 	[
+		{"name":"getMailBody",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getMailHeaders",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"answerMail",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

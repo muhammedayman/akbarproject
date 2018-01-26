@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  	<title>${pageTitle}</title>
+  	<META NAME="Description" CONTENT="${metadescription}" />
+  	<link rel="stylesheet" href="${knowledgeBaseURL}css/sc_kb_style.css" type="text/css" />
+	<script type="text/javascript" src="${knowledgeBaseURL}js/knowledgebase.js"></script>
+  </head>
+  <body>
+	<div class="outer_logo">&nbsp;</div>
+	<div class="outer_container" id="skin_plain">
+		<div class="outer_top">
+			<div class="outer_top_in">
+				<div class="width_keeper_outer">&nbsp;</div>
+			</div>
+		</div>	
+		
+		<div class="outer_container_in">
+			<div class="kb_crumbs">
+				<div class="width_keeper_crumbs">&nbsp;</div>
+				<a href="${knowledgeBaseURL}index${fileExtension}">${app.i18n.Knowledgebase}</a>
+				${crumbs}
+			</div>
+			
+			<div class="kb_left">
+				<div class="kb_left_in">
+		
+					<div class="kb_left_head">${app.i18n.search}</div>
+					<div class="left_action">
+						<div class="left_action_top"><div class="left_action_top_in">&nbsp;</div></div>
+						<div class="left_action_in_blue">
+							<div class="search_form">
+								<form action="${applicationURL}server/search.php" method="POST">
+									<input type="text" class="txt_input" id="searchinput" name="query"/>
+									<input type="submit" value="${app.i18n.search}" class="button" />
+								</form>
+							</div>
+						</div>
+						<div class="left_action_bottom"><div class="left_action_bottom_in">&nbsp;</div></div>
+					</div>
+					
+					<div class="kb_left_head">${app.i18n.Login}</div>
+					<div class="left_action">
+						<div class="left_action_top"><div class="left_action_top_in">&nbsp;</div></div>
+						<div class="left_action_in_blue">
+							<div class="login_form">
+								<form action="${applicationURL}server/login.php" method="POST">
+									<table style="font-family: arial,verdana,sans-serif; font-size: small; font-weight: normal; color:#3E5997; width: 100%">
+										<tr>
+											<td>
+												${app.i18n.email}
+											</td>
+											<td style="width: 100%;">
+												<input type="text" name="email" style="width: 100%;"/>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												${app.i18n.password}
+											</td>
+											<td style="width: 100%;">
+												<input type="password" name="password" style="width: 100%;"/>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												${app.i18n.language}
+											</td>
+											<td style="width: 100%;">
+												<select name="language" style="width: 100%;">
+													${languages}
+												</select>
+											</td>
+										</tr>
+									</table>
+									<input type="submit" value="${app.i18n.Login}" class="button" />
+								</form>
+                                <a href="${applicationURL}server/register_user.php">${app.i18n.signUp}</a><br/>
+                                <a href="${applicationURL}server/request_password.php">${app.i18n.forgotPassword}</a>
+							</div>
+						</div>
+						<div class="left_action_bottom"><div class="left_action_bottom_in">&nbsp;</div></div>
+					</div>
+					
+					
+					<div class="left_action">
+						<div class="left_action_top"><div class="left_action_top_in">&nbsp;</div></div>
+						<div class="left_action_in_red">
+							<div class="left_action_in_title"><a href="${applicationURL}server/submit_form.php">${app.i18n.SubmitNewTicket}</a></div>
+						</div>
+						<div class="left_action_bottom"><div class="left_action_bottom_in">&nbsp;</div></div>
+					</div>
+					<div class="left_action">
+						<div class="left_action_top"><div class="left_action_top_in">&nbsp;</div></div>
+						<div class="left_action_in_red">
+							<div class="left_action_in_title"><a href="http://forum.qualityunit.com">${app.i18n.CommunityForums}</a></div>
+						</div>
+						<div class="left_action_bottom"><div class="left_action_bottom_in">&nbsp;</div></div>
+					</div>
+
+					<div class="left_action">
+						<div class="left_action_top"><div class="left_action_top_in">&nbsp;</div></div>
+						<div class="left_action_in_red">
+							<div class="left_action_in_title"><a href="http://www.qualityunit.com/">Quality Unit Home Page</a></div>
+						</div>
+						<div class="left_action_bottom"><div class="left_action_bottom_in">&nbsp;</div></div>
+					</div>
+
+
+				</div>
+			</div>
+			<!-- kb_left END-->
+			
+			${content}		
+
+		</div>
+		<div class="divider">&nbsp;</div>
+		<div class="outer_bottom"><div class="outer_bottom_in"><div class="width_keeper_outer">&nbsp;</div></div></div>
+	</div>
+	<div class="footer">
+		<!-- IMPORTANT !!! If you didn't ordered branding free version, you are not allowed to remove link to www.qualityunit.com/supportcenter/ from footer of your knowledgebase ! Thank you ! -->
+		©2007 <a class="blue" target="_blank" href="http://www.qualityunit.com/supportcenter/"><span class="badge">&nbsp;</span></a><br/>
+		<span>SupportCenter</span>
+	</div>
+  </body>
+</html>

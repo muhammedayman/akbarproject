@@ -1,0 +1,50 @@
+{"SMDVersion":".1",
+ "objectName":"ProductOrders",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=ProductOrders",
+ "methods":
+ 	[
+        {"name":"getOrdersList",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {"name":"getProductOrdersList",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+    	{"name":"deleteOrder",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"insertOrder",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateOrder",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+        {"name":"getOrder",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {"name":"getProductOrder",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        }
+    ]
+}

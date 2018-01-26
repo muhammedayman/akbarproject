@@ -1,0 +1,38 @@
+{"SMDVersion":".1",
+ "objectName":"Notifications",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Notifications",
+ "methods":
+ 	[
+		{"name":"updateNotification",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"insertNotification",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"getNotificationsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"deleteNotification",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"getNotification",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

@@ -1,0 +1,14 @@
+{"SMDVersion":".1",
+ "objectName":"Nop",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Nop",
+ "methods":
+ 	[
+		{"name":"nop",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

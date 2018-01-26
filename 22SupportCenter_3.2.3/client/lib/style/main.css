@@ -1,0 +1,169 @@
+@CHARSET "UTF-8";
+
+body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 12px;
+	padding-top: 0px;
+	min-width: 1000px;
+}
+
+html>body {  
+	position: relative; 
+} 
+
+table {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+button {
+    display: inline;
+    background-color: #FF9900;
+    color: white;
+    border-left-color: #FFDB33;
+    border-top-color: #FFDB33;
+    border-bottom-color: #E15300;
+    border-right-color: #E15300;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-width: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+button[disabled], button[disabled]:hover, button[disabled]:focus {
+	background-color: #DDDDDD;
+	color: #999999;
+    border: 1px solid #999999;
+}
+
+button:focus {
+	background-color: #FF7700;
+}
+
+button:hover {
+	background-color: #FF7700;
+}
+
+
+*::-moz-any-link input, *::-moz-any-link textarea { /* FX only disappearing caret anyone? */
+	overflow: auto;
+}
+
+
+
+input {
+	direction: ltr;
+}
+
+input[type=text], input[type=password], textarea {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	border: 1px solid #999999;
+	clear:right;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #FFF7D7;	
+}
+
+label {
+	clear:left;
+	display:block;
+	float:left;
+	width:60px;
+	text-align:right;
+	padding-right:10px;
+	margin-bottom:0.5em;	
+}
+
+fieldset {
+	line-height: 1.5em;
+	border: 1px solid #AAAAAA;
+	margin-top: 0.5em;
+	padding: 3px;
+}
+
+legend {
+	color: #999999;
+	font-weight: bold;
+}
+
+hr {
+	border: 1px solid #DDDDDD;
+}
+
+select {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	/*border: 1px solid #999999;*/
+}
+
+a {
+    color: #2E8C2E;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    color:white;
+    background-color: #2E8C2E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    padding: 0px;
+    margin: 0px;
+}
+
+.quDialog {
+	background-color: white;
+	border: 1px solid #364157;
+	padding: 2px;
+}
+
+.quDialog .titleContainer {
+	background-color: #D3E3F5;
+	cursor: move;
+}
+
+.quDialog .title {
+	color: #364157;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.quDialog .icon {
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+	margin: 2px;
+}
+
+.quDialog .content {
+	overflow: auto;
+}
+
+.quDialog .wait {}
+
+.quFrame {}
+.quFrame .content {}
+.quFrame .waiting {}
+
+.msgBox {
+	font-style: italic;
+}
+
+.i18nNotFound {
+	text-decoration: blink;
+}

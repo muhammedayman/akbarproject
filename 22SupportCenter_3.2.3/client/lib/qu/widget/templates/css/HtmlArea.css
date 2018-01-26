@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+.quHtmlArea {
+	
+}
+
+.quHtmlArea iframe {
+	width: 100%;
+	height: 200px;
+	border: none;
+	background-color: white;
+	margin: 0px;
+}
+
+.quHtmlArea .toolbar {
+    height: 23px;
+    overflow: hidden;
+    border: none;
+    margin: 0px;
+    padding-left: 6px;
+    padding-top: 2px;
+}
+
+.quHtmlArea .button, .quHtmlArea .button:hover {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quHtmlArea .button:hover {
+    background-color: #EEEEEE;
+    padding: 0px;
+}

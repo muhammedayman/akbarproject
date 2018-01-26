@@ -1,0 +1,38 @@
+{"SMDVersion":".1",
+ "objectName":"WorkReports",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=WorkReports",
+ "methods":
+ 	[
+		{"name":"insertReport",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+		{"name":"updateReport",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteReport",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getBillingTimeList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getBillingTimeSum",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}

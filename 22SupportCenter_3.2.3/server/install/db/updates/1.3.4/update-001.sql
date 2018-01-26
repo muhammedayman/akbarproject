@@ -1,0 +1,1 @@
+update settings set setting_value = '1.3.4' WHERE setting_key='dbLevel';

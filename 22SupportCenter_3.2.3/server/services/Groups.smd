@@ -1,0 +1,50 @@
+{"SMDVersion":".1",
+ "objectName":"Groups",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Groups",
+ "methods":
+ 	[
+		{"name":"getGroupsList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteGroup",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"insertGroup",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"updateGroup",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"getGroup",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+        {"name":"getCustomFieldValues",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        },
+        {"name":"getAllCustomFieldValues",
+        "parameters":
+            [
+            {"name":"params", "type":"OBJECT"}
+            ]
+        }
+    ]
+}

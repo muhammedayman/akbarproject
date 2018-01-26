@@ -1,0 +1,20 @@
+{"SMDVersion":".1",
+ "objectName":"Files",
+ "serviceType":"JSON-RPC",
+ "serviceURL": "../server/index.php?service=Files",
+ "methods":
+ 	[
+		{"name":"getFilesList",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	},
+    	{"name":"deleteFile",
+		"parameters":
+			[
+			{"name":"params", "type":"OBJECT"}
+			]
+    	}
+    ]
+}
